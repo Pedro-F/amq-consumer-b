@@ -1,4 +1,4 @@
-package producerid;
+package artifactid;
 
 public class Body {
 	String Payload;

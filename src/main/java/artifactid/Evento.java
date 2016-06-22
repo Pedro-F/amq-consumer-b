@@ -1,4 +1,4 @@
-package producerid;
+package artifactid;
 
 
 public class Evento {
@@ -34,11 +34,6 @@ public class Evento {
 		body = new Body();
 	}
 
-	public Evento(String id) {
-		super();
-		header = new Header();
-		header.setUID(id);
-		body = new Body();
-	}
+	
 	
 }

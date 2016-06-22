@@ -1,10 +1,10 @@
-package producerid;
+package artifactid;
 
 import javax.jms.Connection;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
-  class ProducerConnection /*implements Runnable*/{
+  class ConsumerConnection /*implements Runnable*/{
 	//public void run() {
     
 	
