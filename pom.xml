@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>mq-producer-Alex</groupId>
-  <artifactId>producerid</artifactId>
+  <groupId>activemq</groupId>
+  <artifactId>amq-consumer-b</artifactId>
   <version>0.0.1</version>
   
   <packaging>jar</packaging>
-  <name>producer</name>
+  <name>amq-consumer-b</name>
   <description>Ejemplo de productor para colas jboss eap amq sin persistencia</description>
   
   <parent>
