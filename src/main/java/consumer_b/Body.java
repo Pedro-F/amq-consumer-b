@@ -1,4 +1,4 @@
-package artifactid;
+package consumer_b;
 
 public class Body {
 	String Payload;
