@@ -1,5 +1,10 @@
 package consumer_b;
 
+/**
+ * Header of evento class
+ * @author pedro.alonso.garcia
+ *
+ */
 public class Header {
 
 	String UID;
@@ -8,6 +13,27 @@ public class Header {
 	String Event_origin_service;
 	String Timestamp;
 	String Criticality;
+	
+	public Header(String uID, String event_type, String event_subtype, String event_origin_service, String timestamp,
+			String criticality) {
+		super();
+		UID = uID;
+		Event_type = event_type;
+		Event_subtype = event_subtype;
+		Event_origin_service = event_origin_service;
+		Timestamp = timestamp;
+		Criticality = criticality;
+	}
+	public Header() {
+		super();
+		setCriticality("1");
+	    setEvent_origin_service("Servicio origen");
+	    setEvent_subtype("subtipo de servicio");
+	    setEvent_type("tipo de evento");
+	    setTimestamp("22-06-2016");
+	    setUID("ID1234567890");
+	}
+	
 	public String getUID() {
 		return UID;
 	}
@@ -44,25 +70,5 @@ public class Header {
 	public void setCriticality(String criticality) {
 		Criticality = criticality;
 	}
-	public Header(String uID, String event_type, String event_subtype, String event_origin_service, String timestamp,
-			String criticality) {
-		super();
-		UID = uID;
-		Event_type = event_type;
-		Event_subtype = event_subtype;
-		Event_origin_service = event_origin_service;
-		Timestamp = timestamp;
-		Criticality = criticality;
-	}
-	public Header() {
-		super();
-		setCriticality("1");
-	    setEvent_origin_service("Servicio origen");
-	    setEvent_subtype("subtipo de servicio");
-	    setEvent_type("tipo de evento");
-	    setTimestamp("22-06-2016");
-	    setUID("ID1234567890");
-	}
-	
 	
 }

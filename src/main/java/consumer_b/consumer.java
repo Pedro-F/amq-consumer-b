@@ -4,10 +4,8 @@ import javax.jms.Connection;
 import javax.jms.Destination;
 import javax.jms.ExceptionListener;
 import javax.jms.JMSException;
-import javax.jms.Message;
 import javax.jms.MessageConsumer;
 import javax.jms.Session;
-import javax.jms.TextMessage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -24,7 +22,7 @@ import com.google.gson.GsonBuilder;
 @EnableAutoConfiguration
 @EnableJms
 /**
- * Clase que produce una entrada en la cola JBoss EAP AMQ
+ * This class listen to messages on a JBoss EAP AMQ Queue
  * @author pedro.alonso.garcia
  *
  */
@@ -43,8 +41,6 @@ public class consumer implements ExceptionListener {
 		
 		Evento myEvento;
         
-        
-        
         Gson gson = new GsonBuilder().create();
         myEvento = gson.fromJson(text, Evento.class);
 	}
@@ -57,16 +53,13 @@ public class consumer implements ExceptionListener {
 				init();
 			}
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		
 		return "<strong>Consumer</strong> <br>Recibiendo mensajes</br>";
 	}
 
 	private void init() {
-		// TODO Auto-generated method stub
 		
 		conn = ConsumerConnection.getConnection();
 		

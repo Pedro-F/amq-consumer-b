@@ -1,13 +1,14 @@
 package consumer_b;
 
 import javax.jms.Connection;
-
 import org.apache.activemq.ActiveMQConnectionFactory;
 
-  class ConsumerConnection /*implements Runnable*/{
-	//public void run() {
-    
-	
+/**
+ * This class has a static method "getConnection" that connects to an ActiveMQ Queue 
+ * @author pedro.alonso.garcia
+ *
+ */
+public class ConsumerConnection{
 	
 	public static Connection getConnection(){
 		Connection connection = null;
@@ -28,6 +29,5 @@ import org.apache.activemq.ActiveMQConnectionFactory;
         }
 		return connection;
     }
-
 	
 }
