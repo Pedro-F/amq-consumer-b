@@ -1,7 +1,6 @@
 package consumer_b;
 
 import javax.jms.Connection;
-import javax.jms.Destination;
 import javax.jms.ExceptionListener;
 import javax.jms.JMSException;
 import javax.jms.MessageConsumer;
