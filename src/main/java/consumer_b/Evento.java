@@ -1,6 +1,5 @@
 package consumer_b;
 
-
 /**
  * Evento bean, composed by a header and a body
  * @author pedro.alonso.garcia
@@ -21,6 +20,13 @@ public class Evento {
 	public Evento() {
 		super();
 		header = new Header();
+		body = new Body();
+	}
+	
+	public Evento(String id) {
+		super();
+		header = new Header();
+		header.setUID(id);
 		body = new Body();
 	}
 	
