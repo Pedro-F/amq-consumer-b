@@ -1,3 +1,3 @@
-default.configuration=mq-producer-Alex
+default.configuration=amq-consumer-b
 eclipse.preferences.version=1
 hibernate3.enabled=true

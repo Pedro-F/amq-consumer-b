@@ -27,7 +27,7 @@ import com.google.gson.GsonBuilder;
  */
 
 
-public class consumer implements ExceptionListener {
+public class Consumer implements ExceptionListener {
 	//Variables Globales
 	Connection conn = null;
 	Session session = null;
@@ -52,7 +52,7 @@ public class consumer implements ExceptionListener {
 
 	
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(consumer.class, args);
+        SpringApplication.run(Consumer.class, args);
         
     }
  
